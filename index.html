@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Naivedya Rai</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Naivedya Rai</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Naivedya Rai</h1>
+        <p class="section__text__p2">Computer Science Student</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/naivedyarai/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Naivedya-Rai'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <br>
+
+              <p style="text-align: left;">
+                <strong>Recktronic Devices & Systems</strong> Pune, India<br>
+                Software Engineer Intern | June 2023 - Aug 2023
+                <ul style="text-align: left;">
+                  <li>Used Enterprise data to train an LLM to accurately answer Company FAQs.</li>
+                  <li>Analysed device sensor data to improve efficiency using Python.</li>
+                  <li>Gained hands-on experience with PowerBi & SCADA, worked on developing an in-house application using React.</li>
+                </ul>
+                <br>
+              </p>
+              
+              <p style="text-align: left;">
+                <strong>Being Volunteer</strong> Pune, India<br>
+                Software Developer Intern | June 2022 - Nov 2022
+                <ul style="text-align: left;">
+                  <li>Built a cross-platform application (GreenDot) to identify and geologically tag 1000+ plants based on their location.</li>
+                  <li>Led a team of 4 and carried out data collection for the project.</li>
+                  <li>Worked on the backend using Firebase and used Dart and Flutter for the app.</li>
+                </ul>
+                <br>
+              </p>
+              
+              <p style="text-align: left;">
+                <strong>Symbiosis Institute of Technology</strong> Pune, India<br>
+                Machine Learning Research | Jan 2023 - May 2023
+                <ul style="text-align: left;">
+                  <li>Carrying out machine learning research under Dr. Deepak Dharao for aircraft fuel flow performance optimization.</li>
+                  <li>Using machine learning to develop precise fuel flow models using full-flight data, yielding significant aviation industry benefits.</li>
+                </ul>
+                <br>
+              </p>
+            
+
+            </div>
+            
+            <style>
+              .details-container p {
+                text-align: left;
+              }
+            </style>
+            
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <br>
+              <p>
+                <strong>Symbiosis Institute of Technology</strong>, India<br>
+                <em>BTech in Computer Science </em>| 2020 - 2024 <br>
+                <strong>CGPA:</strong> 7.7/10 (up to 6th Semester)<br>
+                <strong>Clubs and Activities:</strong>
+                Google Student Developer Club, AI Club,<br> Table Tennis Team (Won 4 medals)
+                <br>
+                
+                <strong>Courses:</strong> Data Structures & Algorithms, Design & Analysis of Algorithms, Object-Oriented Programming, Computer Networks, Data Science, Operating Systems, Machine Learning, Cloud Computing, Database Management Systems, Big Data, Full-stack Development
+                <br>
+                
+               
+              </p>
+              <p>
+                <br>
+                <strong>Pratibha Junior College</strong>, Pune, India<br>
+                <em>HSC in Science (Class XII)</em> | 2020<br>
+                <strong>Graduated with Distinction</strong><br>
+                
+                <strong>Courses:</strong> Physics, Chemistry, Mathematics & Computer Science
+                <br>
+                
+                
+              </p>
+              <p>
+                <br>
+                <strong>Wisdom World School</strong>, Pune, India<br>
+                <em>ICSE (Class X)</em> | 2018<br>
+                <strong>Grade:</strong> 91.4%<br>
+                <strong>Courses:</strong> Physics, Chemistry, Mathematics & Computer Science
+              </p>
+              
+            </div>
+            
+          </div>
+          <div class="text-container">
+            <h2>Who am I?</h2><br>
+            
+              I'm a Computer Science student at Symbiosis Institute of Technology, deeply passionate about coding and data driven development.<br> My interests span software development, ML, AI, and data science.<br><br>
+              Proficient in Java, Python, and C++, and skilled in algorithms,<br> I enjoy tackling complex challenges. I'm currently learning full-stack development.<br><br>
+              I've developed software, implemented ML algorithms, and worked with data in personal projects and coursework. I was also selected for a Data Analytics internship at the National University of Singapore, and I'm seeking constant learning and industry exposure.<br><br>
+              When I'm not coding you can find me playing sports. I excel in football, table tennis, and speed-cubing, having won several competitions. I'm also an avid marathon runner and I value persistence. With 10k+ followers, I've managed a successful art page showcasing creativity.<br><br>
+              My blend of tech passion, coding skills, and diverse interests makes me a strong fit for Software Engineering and Data Science roles. Excited to contribute to teams and grow.
+            <br>
+            <br>
+            
+            <h2>Achievements</h2>
+            <br>
+            <ul>
+              <li>2023: 1st Place, Awarded Best Research Paper and Presentation in the ML Track at ICSDP-2023 out of 300+ Papers, India</li>
+              <li>2023: Scored 8.5/9 on the International English Language Testing System (IELTS), India</li>
+              <li>2023: Ranked 19th out of 1412 participants on GeeksforGeeks, India</li>
+              <li>2022: Earned a 5-star rating in SQL on HackerRank, India</li>
+              <li>2022: Selected for an Academic Internship in Data Analytics at The National University of Singapore (NUS), India</li>
+              <li>2020: Achieved TOP 1% Scores on the SITEEE entrance exam, India</li>
+              <li>2018: 1st Place in Inter-school cubing competition and ranked top 20 in several National level competitions, India</li>
+              <li>2018: Awarded Top Performer for scoring 90%+ in ICSE Class X Examination, India</li>
+            </ul>
+<br>
+            <h2>Publications</h2>
+            <br>
+            <strong>CONFERENCE PROCEEDINGS</strong><br>
+            Aircraft fuel flow modeling and performance optimization using machine learning<br>
+            Deepak Dharrao, Naivedya Rai, Mrinank Misal, Nirgoon Joshi, Siddharth Rajagopalan<br>
+            3rd International Conference on Signal Data Processing 2023(ICSDP ‑ 2023), 2023, India<br>
+            <br>
+            
+          </div>
+          
+          
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore my</p>
+      <h1 class="title">Skills</h1>
+      
+        <div class="about-containers">
+          <div class="details-container">
+            <div class="article-container">
+              <div class="details-container"><div class="article-container"></div> <strong>Programming</strong> <br> Python, R, Java, C/C++, SQL, Apache Spark, Data Structures & Algorithms</div>
+              <div class="details-container"><div class="article-container"></div><strong>Tools & Frameworks</strong> <br> Scikit‑learn, Matplotlib, Seaborn, Keras, LangChain, TensorFlow, Pandas, Numpy, PowerBi</div>
+              <div class="details-container"><div class="article-container"></div><strong>Web Development</strong> <br> HTML, CSS, JavaScript, React</div>
+              <div class="details-container"><div class="article-container"></div><strong>App Development</strong> <br> Dart, Flutter</div>
+              <div class="details-container"><div class="article-container"></div><strong>Misc</strong> <br> Data Analytics, MS Word, MS Excel, MS PowerPoint, Git, GitHub, Latex</div>
+              <div class="details-container"><div class="article-container"></div><strong>Soft Skills</strong> <br>Time Management, Teamwork, Problem‑solving, Documentation, Leadership</div>
+          </div>
+
+          
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Code Canvas : DS & Algo Explorer</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Naivedya-Rai/code-canvas'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://naivedya-rai.github.io/code-canvas/'"
+              >
+                Live 
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Aircraft Fuel Flow predictor</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Naivedya-Rai/Aircraft-fuel-flow-rate-predictor'"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Personality Prediction</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Naivedya-Rai/Personality-Prediction'"
+              >
+                Github
+              </button>
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:leorai259@gmail.com">Email</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/naivedyarai/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Naivedya Rai. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
